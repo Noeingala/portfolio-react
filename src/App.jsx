@@ -1,13 +1,14 @@
+import style from "./App.module.css";
+import {Navbar} from "./components/Navbar";
 
 
 function App() {
   
 
   return (
-    <>
-      Hello word!
-      Noe
-    </>
+    <div className={style.App}>
+      <Navbar />
+    </div>
   )
 }
 
