@@ -13,7 +13,7 @@ export const Navbar = () => {
                 src={menuOpen ? getImageUrl('Nav/icons8-menú-50.png') : getImageUrl('Nav/icons8-x-48.png')}  
                 alt='menu-button' 
                 onClick={()=>setMenuOpen(!menuOpen)}/>
-            <ul className={`${style.menuItems} ${menuOpen && style.menuOpen}`}>
+            <ul className={`${style.menuItems} ${menuOpen && style.menuOpen}`} onClick={()=>setMenuOpen(false)}>
                 <li><a href='#about'>About</a></li>
                 <li><a href='#habilidades'>Habilidades</a></li>
                 <li><a href='#proyectos'>Proyectos</a></li>
