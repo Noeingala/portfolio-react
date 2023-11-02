@@ -1,6 +1,7 @@
 import style from "./App.module.css";
 import {Navbar} from "./components/Navbar";
 import Presentacion from "./components/Presentacion/Presentacion";
+import About from "./components/About/About";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className={style.App}>
       <Navbar />
       <Presentacion  />
+      <About />
     </div>
   )
 }
